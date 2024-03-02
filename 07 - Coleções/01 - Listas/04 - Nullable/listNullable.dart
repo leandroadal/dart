@@ -6,6 +6,7 @@ void main() {
   // A Lista pode ser nula
   List<String>? lista2;
 
+  // ignore: unnecessary_null_comparison
   if (lista2 != null) {
     lista2.add("value");
   }
@@ -16,6 +17,7 @@ void main() {
   lista3.add(null);
 
   List<String?>? lista4;
+  // ignore: unnecessary_null_comparison
   if (lista4 != null) {
     lista4.add(null);
   }
